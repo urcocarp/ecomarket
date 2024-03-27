@@ -1,3 +1,11 @@
+
+
+*{
+  margin: 0;
+}
+body{
+  font-family:url(assets/Poppins-Light.ttf);
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
