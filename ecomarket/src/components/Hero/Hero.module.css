@@ -29,7 +29,7 @@
     gap: 20px;
 }
 .handIcon img{
-    width: 105px;
+    width: 95px;
 
 }
 .heroLatestBtn{
@@ -52,5 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+}
+.heroRight img{
+    width: 85px;
 }
