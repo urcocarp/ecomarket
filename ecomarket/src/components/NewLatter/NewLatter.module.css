@@ -10,11 +10,13 @@
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
     gap: 30px;
+    
 }
 .newlatter h1{
     color: #454545;
     font-size: 55px;
     font-weight: 600;
+    margin-top: 40px;
 
 }
 .newlatter p{
@@ -49,6 +51,6 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
-    
+
 
 }
