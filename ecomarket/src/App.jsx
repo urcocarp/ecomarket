@@ -6,6 +6,7 @@ import Cart from './Pages/Cart'
 import ShopCategory from './Pages/ShopCategory'
 import LoginSignup from './Pages/LoginSignup'
 import Product from './Pages/Product'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 
         
         </Routes>
+        <Footer/>
         </BrowserRouter>
       </div>
     </>
