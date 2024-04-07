@@ -1,6 +1,6 @@
 import './App.css'
 import NavBar from './components/NavBar/Navbar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Shop from './Pages/Shop'
 import Cart from './Pages/Cart'
 import ShopCategory from './Pages/ShopCategory'
@@ -12,13 +12,14 @@ import womenBanner from './assets/banner_women.png'
 import kidsBanner from './assets/banner_kids.png'
 
 
+
 function App() {
-  
+  const location = useLocation()
+  const showFooter = location.pathname !== '/login'
 
   return (
     <>
       <div>
-        <BrowserRouter>
         <NavBar/>
         <Routes>
           <Route path="/" element={<Shop/>}/>
@@ -30,13 +31,11 @@ function App() {
           </Route>
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/login" element={<LoginSignup/>}/>
-
-        
         </Routes>
         <Footer/>
-        </BrowserRouter>
       </div>
     </>
+    
   )
 }
 
