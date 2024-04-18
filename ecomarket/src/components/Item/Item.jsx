@@ -1,12 +1,13 @@
 import React from "react";
 import style from "./Item.module.css"
+import { Link } from "react-router-dom";
 
 
 const Item=(props)=>{
     return(
         <div className={style.item}>
-            <img src={props.image} alt="" />
             <p>{props.name}</p>
+           <Link to={`/product/${props.id}`}><img src={props.image} alt="" /></Link> 
             <div className={style.itemPrices}></div>
             <div className={style.itemPricesNew}>
                 ${props.new_price}
