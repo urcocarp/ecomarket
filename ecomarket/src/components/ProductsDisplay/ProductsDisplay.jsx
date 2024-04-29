@@ -49,7 +49,7 @@ const ProductDisplay =(props)=>{
                     <div>XL</div>
                     <div>XXL</div>
                 </div>
-                <button>ADD TO CARD</button>
+                <button>ADD TO CART</button>
                 <p className={style.productCategory}><span>Category :</span>Women, T-shirt,Crop top</p>
                 <p className={style.productCategory}><span>Tags :</span>Modern, Latest</p>
             </div>
