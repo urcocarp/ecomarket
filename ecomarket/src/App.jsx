@@ -15,7 +15,8 @@ import kidsBanner from './assets/banner_kids.png'
 
 function App() {
   const location = useLocation()
-  const showFooter = location.pathname !== '/login'
+  const showFooter = location.pathname !== '/Login'
+  console.log(showFooter, location)
 
   return (
     <>
@@ -32,7 +33,7 @@ function App() {
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/login" element={<LoginSignup/>}/>
         </Routes>
-        <Footer/>
+           {showFooter && <Footer />}
       </div>
     </>
     

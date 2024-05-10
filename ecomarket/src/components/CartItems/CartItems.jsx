@@ -5,7 +5,7 @@ import { ShopContext } from "../../context/ShopContext";
 import remove_icon from "../../assets/cart_cross_icon.png"
 
 const CartItems=()=>{
-    const {all_product, cartItems,removeFromCart}= useContext(ShopContext)
+    const {all_product, getTotalCartAmount,cartItems,removeFromCart}= useContext(ShopContext)
     return (
         <div className={style.cartitems}>
             <div className={style.cartitemsFormatMain}>
@@ -18,10 +18,10 @@ const CartItems=()=>{
             <p>Remove</p>
            </div>
             <hr />
-            {all_product.map((e)=>{
+            {all_product.map((e,key)=>{
                 if(cartItems[e.id]>0)
                 {
-                    return<div>
+                    return<div key={key}>
                     <div className={style.cartitemsFormat}>
                         <img src={e.image} alt="" className={style.carticonProductIcon} />
                         <p>{e.name}</p>
@@ -41,7 +41,7 @@ const CartItems=()=>{
                     <div>
                         <div className={style.cartItemsTotalItem}>
                             <p>Subtotal</p>
-                            <p>${0}</p>
+                            <p>${getTotalCartAmount()}</p>
                         </div>
                         <hr />
                         <div className={style.cartItemsTotalItem}>
@@ -51,8 +51,16 @@ const CartItems=()=>{
                         <hr />
                         <div  className={style.cartItemsTotalItem}>
                             <h3>Total</h3>
-                            <h3>${0}</h3>
+                            <h3>${getTotalCartAmount()}</h3>
                         </div>
+                    </div>
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
+                <div className={style.cartItemsPromoCode}>
+                    <p>If you have a promo code, Enter it here</p>
+                    <div className={style.cartItemsPromoBox}>
+                        <input type="text"  placeholder="Promo code"/>
+                        <button>Submit</button>
                     </div>
                 </div>
             </div>
