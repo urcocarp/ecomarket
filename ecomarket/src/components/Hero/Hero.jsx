@@ -8,7 +8,7 @@ const Hero =()=>{
     return(
         <div className={style.hero}>
             <div className={style.heroLeft}>
-              <h2>RECIEN LLEGADOS</h2> 
+              <h2>NEWCOMERS</h2> 
                  <div>
                     <div className={style.handIcon}>
                         <p>New</p>
