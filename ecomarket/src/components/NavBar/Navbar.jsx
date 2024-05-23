@@ -19,9 +19,9 @@ const NavBar=()=>{
         </div>
          <ul className={style.navmenu}>
             <li onClick={()=>{setMenu("shop")}}><Link style={{textDecoration:'none'}} to="/">Shop</Link> {menu==="shop"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Hombre")}}><Link style={{textDecoration:'none'}} to="/mens">Hombre</Link> {menu==="Hombre"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Mujer")}}><Link style={{textDecoration:'none'}} to="/womens">Mujer</Link> {menu==="Mujer"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Niños")}}><Link style={{textDecoration:'none'}} to="/kids">Niños</Link> {menu==="Niños"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Hombre")}}><Link style={{textDecoration:'none'}} to="/mens">Men</Link> {menu==="Hombre"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Mujer")}}><Link style={{textDecoration:'none'}} to="/womens">Women</Link> {menu==="Mujer"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Niños")}}><Link style={{textDecoration:'none'}} to="/kids">Kids</Link> {menu==="Niños"?<hr/>:<></>}</li>
          </ul>
          <div className={style.navLogincart}>
            <Link to="./Login"><button>Login</button></Link> 
