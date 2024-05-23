@@ -11,14 +11,14 @@ const Hero =()=>{
               <h2>RECIEN LLEGADOS</h2> 
                  <div>
                     <div className={style.handIcon}>
-                        <p>Nueva</p>
+                        <p>New</p>
                         <img src={hand_icon} alt="" />
                     </div>
-                    <p>coleccion</p>
-                    <p>Para todos!</p>
+                    <p>colection</p>
+                    <p>for everyone!</p>
                  </div>
                  <div className={style.heroLatestBtn}>
-                    <div>Ultima coleccion</div>
+                    <div>Latest collection</div>
                     <img src={arrow_icon} alt="" />
                  </div>
             </div>
